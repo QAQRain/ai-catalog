@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 工具總覽 | AI Tools Catalog</title>
+  <meta name="description" content="整理主流 AI 工具與模型：支援哪些輸入、是否免費、免費額度多少，附卡片與比較表兩種檢視。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-top">
+    <div class="brand">
+      <h1 id="site-title">AI 工具總覽</h1>
+      <p class="sub" id="site-sub">主流 AI 服務的免費額度、支援能力一次看完</p>
+    </div>
+    <div class="header-actions">
+      <button type="button" class="btn" id="lang-toggle" aria-label="Switch language">EN</button>
+      <button type="button" class="btn" id="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">◐</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="notice" id="notice"></p>
+
+    <div class="toolbar">
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input type="search" id="search" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="segmented" role="group" aria-label="View mode">
+        <button type="button" data-view="cards" class="seg is-active">卡片</button>
+        <button type="button" data-view="table" class="seg">比較表</button>
+      </div>
+    </div>
+
+    <div class="chips" id="filters"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="count" id="count"></p>
+
+  <section id="cards" class="grid" aria-live="polite"></section>
+
+  <section id="table-wrap" class="table-wrap is-hidden" aria-live="polite">
+    <table class="cmp" id="cmp-table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <p class="empty is-hidden" id="empty"></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p id="footer-note"></p>
+    <p class="footer-meta">
+      <span id="footer-updated"></span>
+      <span class="dot">·</span>
+      <a href="https://developers.cloudflare.com/workers/static-assets/" target="_blank" rel="noopener">Cloudflare Workers</a>
+    </p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers 設定：只托管靜態檔案，沒有後端程式
+  // 部署：wrangler deploy
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "ai-catalog",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public"
+  }
+}
