@@ -3,6 +3,7 @@
 把主流 AI 服務整理成一份可搜尋、可比較的清單：能做什麼、支援哪些輸入、免費額度有多少，一次看完。
 
 **網站：<https://ai-catalog.qaqrain.workers.dev/>**
+**專案位址：<https://github.com/QAQRain/ai-catalog/>**
 
 ## 功能
 
