@@ -1,0 +1,52 @@
+{
+  "name": "@qaqrain/ai-catalog",
+  "version": "1.0.0",
+  "description": "52 個 AI 服務的結構化資料：分類、免費額度、能力標記，中英雙語，附可直接開啟的靜態網站。",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./data.json": "./data.json",
+    "./site": "./public/index.html",
+    "./site/*": "./public/*"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "data.json",
+    "data.mjs",
+    "public",
+    "scripts",
+    "LICENSE",
+    "LICENSE-DATA"
+  ],
+  "scripts": {
+    "build": "node scripts/build-data.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "keywords": [
+    "ai",
+    "ai-tools",
+    "catalog",
+    "dataset",
+    "open-data",
+    "llm",
+    "free-tier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QAQRain/ai-catalog.git"
+  },
+  "homepage": "https://ai-catalog.qaqrain.workers.dev/",
+  "bugs": {
+    "url": "https://github.com/QAQRain/ai-catalog/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
